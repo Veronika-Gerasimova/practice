@@ -1,0 +1,375 @@
+2024-07-15 15:41:26,212 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 15:41:26,883 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 15:42:07,635 - aiogram.event - INFO - Update id=911668677 is handled. Duration 516 ms by bot id=7330163920
+2024-07-15 15:42:54,086 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 15:42:54,383 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:01:36,021 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:01:36,533 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:02:04,036 - aiogram.event - INFO - Update id=911668678 is handled. Duration 546 ms by bot id=7330163920
+2024-07-15 16:02:09,275 - aiogram.event - INFO - Update id=911668679 is handled. Duration 157 ms by bot id=7330163920
+2024-07-15 16:02:14,907 - aiogram.event - INFO - Update id=911668680 is handled. Duration 234 ms by bot id=7330163920
+2024-07-15 16:02:15,693 - aiogram.event - INFO - Update id=911668681 is not handled. Duration 0 ms by bot id=7330163920
+2024-07-15 16:02:15,693 - aiogram.event - ERROR - Cause exception while process update id=911668681 by bot id=7330163920
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\practice\handlers\router\note.py", line 84, in process_note_text
+    note_text = message.text.strip()
+                ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2024-07-15 16:02:26,882 - aiogram.event - INFO - Update id=911668682 is not handled. Duration 0 ms by bot id=7330163920
+2024-07-15 16:02:26,882 - aiogram.event - ERROR - Cause exception while process update id=911668682 by bot id=7330163920
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\practice\handlers\router\note.py", line 84, in process_note_text
+    note_text = message.text.strip()
+                ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2024-07-15 16:02:40,941 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:02:41,185 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:03:59,691 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:04:00,173 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:04:10,005 - aiogram.event - INFO - Update id=911668683 is handled. Duration 421 ms by bot id=7330163920
+2024-07-15 16:04:20,967 - aiogram.event - INFO - Update id=911668684 is handled. Duration 280 ms by bot id=7330163920
+2024-07-15 16:04:25,859 - aiogram.event - INFO - Update id=911668685 is handled. Duration 235 ms by bot id=7330163920
+2024-07-15 16:04:26,963 - aiogram.event - INFO - Update id=911668686 is handled. Duration 186 ms by bot id=7330163920
+2024-07-15 16:04:31,179 - aiogram.event - INFO - Update id=911668687 is not handled. Duration 0 ms by bot id=7330163920
+2024-07-15 16:04:31,179 - aiogram.event - ERROR - Cause exception while process update id=911668687 by bot id=7330163920
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\practice\handlers\router\note.py", line 84, in process_note_text
+    note_text = message.text.strip()
+                ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2024-07-15 16:04:45,312 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:04:45,563 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:28:33,677 - __main__ - ERROR - Бот не работает: Can't instantiate abstract class RoleCheckMiddleware without an implementation for abstract method '__call__'
+2024-07-15 16:38:48,969 - __main__ - ERROR - Бот не работает: Can't instantiate abstract class RoleCheckMiddleware without an implementation for abstract method '__call__'
+2024-07-15 16:39:15,437 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:39:15,983 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:39:23,813 - aiogram.event - INFO - Update id=911668688 is handled. Duration 578 ms by bot id=7330163920
+2024-07-15 16:40:22,633 - aiogram.event - INFO - Update id=911668689 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 16:40:56,062 - aiogram.event - INFO - Update id=911668690 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 16:40:58,305 - aiogram.event - INFO - Update id=911668691 is handled. Duration 218 ms by bot id=7330163920
+2024-07-15 16:41:15,445 - aiogram.event - INFO - Update id=911668692 is handled. Duration 485 ms by bot id=7330163920
+2024-07-15 16:41:18,114 - aiogram.event - INFO - Update id=911668693 is handled. Duration 156 ms by bot id=7330163920
+2024-07-15 16:41:48,323 - aiogram.event - INFO - Update id=911668694 is handled. Duration 500 ms by bot id=7330163920
+2024-07-15 16:42:04,406 - aiogram.event - INFO - Update id=911668695 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 16:42:20,066 - aiogram.event - INFO - Update id=911668696 is handled. Duration 391 ms by bot id=7330163920
+2024-07-15 16:44:38,445 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:44:38,753 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:44:49,894 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:44:50,453 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:45:11,707 - aiogram.event - INFO - Update id=911668697 is handled. Duration 500 ms by bot id=7330163920
+2024-07-15 16:47:26,432 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:47:26,740 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:47:38,423 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:47:38,974 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:49:32,902 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:49:33,217 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:49:42,945 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:49:43,486 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:49:58,892 - aiogram.event - INFO - Update id=911668698 is handled. Duration 531 ms by bot id=7330163920
+2024-07-15 16:53:29,761 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:53:30,094 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:53:39,776 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:53:40,326 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:53:56,394 - aiogram.event - INFO - Update id=911668699 is handled. Duration 594 ms by bot id=7330163920
+2024-07-15 16:55:01,652 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:55:01,984 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:55:12,047 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:55:12,491 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:57:37,254 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 16:57:37,553 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:57:48,080 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 16:57:48,609 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 16:58:20,790 - aiogram.event - INFO - Update id=911668700 is handled. Duration 453 ms by bot id=7330163920
+2024-07-15 17:01:00,023 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:01:00,332 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:01:11,160 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 17:01:11,717 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:05:39,735 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:05:40,050 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:05:51,821 - __main__ - ERROR - Бот не работает: Can't instantiate abstract class RoleCheckMiddleware without an implementation for abstract method '__call__'
+2024-07-15 17:06:12,427 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 17:06:12,949 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:06:50,161 - aiogram.event - INFO - Update id=911668701 is handled. Duration 468 ms by bot id=7330163920
+2024-07-15 17:07:08,268 - aiogram.event - INFO - Update id=911668702 is handled. Duration 469 ms by bot id=7330163920
+2024-07-15 17:08:52,057 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:08:52,394 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:09:02,259 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 17:09:02,817 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:10:59,504 - aiogram.event - INFO - Update id=911668703 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 17:11:23,234 - aiogram.event - INFO - Update id=911668704 is handled. Duration 438 ms by bot id=7330163920
+2024-07-15 17:12:37,386 - aiogram.event - INFO - Update id=911668705 is handled. Duration 390 ms by bot id=7330163920
+2024-07-15 17:12:38,836 - aiogram.event - INFO - Update id=911668706 is handled. Duration 311 ms by bot id=7330163920
+2024-07-15 17:12:41,270 - aiogram.event - INFO - Update id=911668707 is handled. Duration 140 ms by bot id=7330163920
+2024-07-15 17:12:43,876 - aiogram.event - INFO - Update id=911668708 is handled. Duration 250 ms by bot id=7330163920
+2024-07-15 17:13:06,136 - aiogram.event - INFO - Update id=911668709 is handled. Duration 406 ms by bot id=7330163920
+2024-07-15 17:13:16,366 - aiogram.event - INFO - Update id=911668710 is handled. Duration 234 ms by bot id=7330163920
+2024-07-15 17:16:01,954 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:16:02,264 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:16:11,972 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 17:16:12,540 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:16:13,222 - aiogram.event - INFO - Update id=911668711 is handled. Duration 452 ms by bot id=7330163920
+2024-07-15 17:16:14,570 - aiogram.event - INFO - Update id=911668712 is handled. Duration 328 ms by bot id=7330163920
+2024-07-15 17:16:35,193 - aiogram.event - INFO - Update id=911668713 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 17:17:18,153 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:17:18,469 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:17:28,736 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 17:17:29,292 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 17:17:35,020 - aiogram.event - INFO - Update id=911668714 is handled. Duration 422 ms by bot id=7330163920
+2024-07-15 17:17:36,211 - aiogram.event - INFO - Update id=911668715 is handled. Duration 311 ms by bot id=7330163920
+2024-07-15 17:18:00,181 - aiogram.event - INFO - Update id=911668716 is handled. Duration 405 ms by bot id=7330163920
+2024-07-15 17:18:01,881 - aiogram.event - INFO - Update id=911668717 is handled. Duration 156 ms by bot id=7330163920
+2024-07-15 17:18:04,398 - aiogram.event - INFO - Update id=911668718 is handled. Duration 1390 ms by bot id=7330163920
+2024-07-15 17:18:09,592 - aiogram.event - INFO - Update id=911668719 is handled. Duration 172 ms by bot id=7330163920
+2024-07-15 17:18:20,371 - aiogram.event - INFO - Update id=911668720 is handled. Duration 172 ms by bot id=7330163920
+2024-07-15 17:24:33,151 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 17:24:33,482 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 19:47:37,947 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 19:47:39,405 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 19:47:43,370 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 19:47:43,458 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 19:55:34,741 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 19:55:35,161 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 19:57:03,336 - aiogram.event - INFO - Update id=911668721 is handled. Duration 547 ms by bot id=7330163920
+2024-07-15 19:57:07,845 - aiogram.event - INFO - Update id=911668722 is handled. Duration 187 ms by bot id=7330163920
+2024-07-15 19:57:46,196 - aiogram.event - INFO - Update id=911668723 is handled. Duration 515 ms by bot id=7330163920
+2024-07-15 19:57:55,005 - aiogram.event - INFO - Update id=911668724 is handled. Duration 172 ms by bot id=7330163920
+2024-07-15 19:58:02,733 - aiogram.event - INFO - Update id=911668725 is handled. Duration 172 ms by bot id=7330163920
+2024-07-15 19:58:20,882 - aiogram.event - INFO - Update id=911668726 is handled. Duration 516 ms by bot id=7330163920
+2024-07-15 19:58:31,188 - aiogram.event - INFO - Update id=911668727 is handled. Duration 313 ms by bot id=7330163920
+2024-07-15 19:58:38,587 - aiogram.event - INFO - Update id=911668728 is handled. Duration 233 ms by bot id=7330163920
+2024-07-15 20:00:12,487 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 20:00:12,488 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 20:00:24,286 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 20:00:24,709 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 20:00:42,149 - aiogram.event - INFO - Update id=911668729 is handled. Duration 562 ms by bot id=7330163920
+2024-07-15 20:00:48,335 - aiogram.event - INFO - Update id=911668730 is handled. Duration 250 ms by bot id=7330163920
+2024-07-15 20:00:50,398 - aiogram.event - INFO - Update id=911668731 is handled. Duration 452 ms by bot id=7330163920
+2024-07-15 20:11:34,964 - aiogram.event - INFO - Update id=911668732 is handled. Duration 436 ms by bot id=7330163920
+2024-07-15 20:11:39,209 - aiogram.event - INFO - Update id=911668733 is handled. Duration 202 ms by bot id=7330163920
+2024-07-15 20:11:41,955 - aiogram.event - INFO - Update id=911668734 is handled. Duration 250 ms by bot id=7330163920
+2024-07-15 20:11:45,807 - aiogram.event - INFO - Update id=911668735 is handled. Duration 266 ms by bot id=7330163920
+2024-07-15 21:14:14,897 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:14:14,899 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:14:39,116 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:14:39,552 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:15:45,309 - aiogram.event - INFO - Update id=911668736 is handled. Duration 641 ms by bot id=7330163920
+2024-07-15 21:15:57,222 - aiogram.event - INFO - Update id=911668737 is handled. Duration 202 ms by bot id=7330163920
+2024-07-15 21:25:14,169 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:25:14,170 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:25:22,012 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:25:22,020 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:25:22,426 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:25:37,036 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:25:52,039 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:26:07,043 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:26:20,447 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:26:20,447 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:29:26,299 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:29:26,749 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:33:02,694 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:33:02,695 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:33:36,190 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:33:36,625 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:35:32,398 - aiogram.event - INFO - Update id=911668738 is handled. Duration 156 ms by bot id=7330163920
+2024-07-15 21:36:27,956 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:36:27,957 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:36:37,576 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:36:37,995 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:37:16,454 - aiogram.event - INFO - Update id=911668739 is handled. Duration 172 ms by bot id=7330163920
+2024-07-15 21:37:20,104 - aiogram.event - INFO - Update id=911668740 is handled. Duration 219 ms by bot id=7330163920
+2024-07-15 21:48:59,240 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:48:59,241 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:49:06,571 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:49:07,001 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:54:56,371 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:54:56,372 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 21:55:05,117 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 21:55:05,526 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 21:55:43,741 - aiogram.event - INFO - Update id=911668741 is handled. Duration 453 ms by bot id=7330163920
+2024-07-15 21:55:47,560 - aiogram.event - INFO - Update id=911668742 is handled. Duration 312 ms by bot id=7330163920
+2024-07-15 21:55:50,415 - aiogram.event - INFO - Update id=911668743 is handled. Duration 186 ms by bot id=7330163920
+2024-07-15 21:55:56,294 - aiogram.event - INFO - Update id=911668744 is handled. Duration 718 ms by bot id=7330163920
+2024-07-15 21:56:06,819 - aiogram.event - INFO - Update id=911668745 is handled. Duration 202 ms by bot id=7330163920
+2024-07-15 21:56:08,712 - aiogram.event - INFO - Update id=911668746 is handled. Duration 265 ms by bot id=7330163920
+2024-07-15 21:56:20,943 - aiogram.event - INFO - Update id=911668747 is handled. Duration 187 ms by bot id=7330163920
+2024-07-15 22:05:15,854 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 22:05:15,854 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-15 22:05:25,599 - aiogram.dispatcher - INFO - Start polling
+2024-07-15 22:05:26,043 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-15 22:05:35,269 - aiogram.event - INFO - Update id=911668748 is handled. Duration 469 ms by bot id=7330163920
+2024-07-15 22:05:38,374 - aiogram.event - INFO - Update id=911668749 is handled. Duration 265 ms by bot id=7330163920
+2024-07-16 09:19:25,478 - aiogram.dispatcher - INFO - Start polling
+2024-07-16 09:19:26,122 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-16 09:19:35,615 - aiogram.event - INFO - Update id=911668750 is handled. Duration 516 ms by bot id=7330163920
+2024-07-16 09:21:01,733 - aiogram.event - INFO - Update id=911668751 is handled. Duration 202 ms by bot id=7330163920
+2024-07-16 09:21:19,953 - aiogram.event - INFO - Update id=911668752 is handled. Duration 437 ms by bot id=7330163920
+2024-07-16 09:27:00,093 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-16 09:27:00,346 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-16 09:27:14,691 - aiogram.dispatcher - INFO - Start polling
+2024-07-16 09:27:15,402 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-16 12:32:01,564 - aiogram.event - INFO - Update id=911668753 is handled. Duration 641 ms by bot id=7330163920
+2024-07-16 12:32:02,809 - aiogram.event - INFO - Update id=911668754 is handled. Duration 406 ms by bot id=7330163920
+2024-07-16 12:32:06,037 - aiogram.event - INFO - Update id=911668755 is handled. Duration 563 ms by bot id=7330163920
+2024-07-16 12:33:26,197 - aiogram.event - INFO - Update id=911668756 is handled. Duration 422 ms by bot id=7330163920
+2024-07-16 12:33:27,490 - aiogram.event - INFO - Update id=911668757 is handled. Duration 327 ms by bot id=7330163920
+2024-07-16 12:33:29,192 - aiogram.event - INFO - Update id=911668758 is handled. Duration 688 ms by bot id=7330163920
+2024-07-16 12:33:37,229 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-16 12:33:37,497 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-16 12:33:56,748 - aiogram.dispatcher - INFO - Start polling
+2024-07-16 12:33:57,278 - aiogram.dispatcher - INFO - Run polling for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'
+2024-07-16 12:34:01,626 - aiogram.event - INFO - Update id=911668759 is handled. Duration 484 ms by bot id=7330163920
+2024-07-16 12:34:03,750 - aiogram.event - INFO - Update id=911668760 is handled. Duration 328 ms by bot id=7330163920
+2024-07-16 12:34:20,644 - aiogram.event - INFO - Update id=911668761 is handled. Duration 406 ms by bot id=7330163920
+2024-07-16 12:34:21,875 - aiogram.event - INFO - Update id=911668762 is handled. Duration 390 ms by bot id=7330163920
+2024-07-16 12:34:23,098 - aiogram.event - INFO - Update id=911668763 is handled. Duration 390 ms by bot id=7330163920
+2024-07-16 12:34:25,399 - aiogram.event - INFO - Update id=911668764 is handled. Duration 202 ms by bot id=7330163920
+2024-07-16 12:34:32,813 - aiogram.event - INFO - Update id=911668765 is handled. Duration 172 ms by bot id=7330163920
+2024-07-16 12:34:38,529 - aiogram.dispatcher - INFO - Polling stopped
+2024-07-16 12:34:38,794 - aiogram.dispatcher - INFO - Polling stopped for bot @MeetingReminderForTransneftBot id=7330163920 - 'Планировщик совещаний'

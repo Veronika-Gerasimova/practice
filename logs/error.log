@@ -1,0 +1,4 @@
+2024-07-15 21:25:22,020 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:25:37,036 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:25:52,039 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
+2024-07-15 21:26:07,043 - __main__ - ERROR - Ошибка при проверке ролей пользователей: 'User' object has no attribute 'role_changed'
